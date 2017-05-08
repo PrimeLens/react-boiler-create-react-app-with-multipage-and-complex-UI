@@ -1,0 +1,13 @@
+
+#madmaxpage .pagetitle {
+    font-style: italic;
+    color: #777;
+    display: inline-block;
+}
+
+
+
+#madmaxpage .pagetitle:hover {
+    color: #a33;
+    text-decoration: underline;
+}

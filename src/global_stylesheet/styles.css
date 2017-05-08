@@ -1,0 +1,42 @@
+/*  PLEASE DONT DELETE essential css that enables modals and the spinning loader component */
+#app, #pagecontainer { position: relative; }
+#app { margin: 0 auto; overflow: hidden; }
+/* also */
+body, html, A, IMG { padding: 0; border: 0; margin: 0; }
+/* end */
+
+
+
+
+
+
+
+/* edit rules below at will  */
+
+#app IMG { display: block; }
+#app A { display: block; }
+#app IMG { width: auto; max-width: 100%; }
+
+#pagecontainer { padding: 0 15px; }
+.codestyle {
+    font-family: courier, monospace;
+    color: #555;
+    margin: 0 5px;
+}
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+
+
+/* some breakpoint code below for you to copy/paste */
+@media (max-width: 767px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) {
+}
+
+
+
+
+

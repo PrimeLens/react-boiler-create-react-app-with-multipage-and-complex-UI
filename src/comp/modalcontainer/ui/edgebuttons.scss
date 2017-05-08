@@ -1,0 +1,59 @@
+
+/* RESPONSIVE STRUCTURE SECTION */
+/* - be repetative as this helps with clarity for debuging */
+/* - change display and float to turn things on and off and lay them out */
+/* - styling, color, borders, font and similar should be done outside this section */
+@media (max-width: 767px) {
+	#modalcontainer {
+
+		.modalCloseButtonWrapper { 
+			position : relative;
+			height: 10px; 
+		}
+		.modalCloseButton {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	#modalcontainer {
+
+		.modalCloseButtonWrapper { 
+			position : relative;
+			height: 0; 
+		}
+		.modalCloseButton {
+			position: absolute;
+			top: -20px;
+			right: -20px;
+		}		
+	}
+}
+@media (min-width: 992px) {
+	#modalcontainer {
+
+		.modalCloseButtonWrapper { 
+			position : relative;
+			height: 0; 
+		}
+		.modalCloseButton {
+			position: absolute;
+			top: -20px;
+			right: -20px;
+		}		
+	}
+}
+
+
+
+
+#modalcontainer { 
+
+	.modalCloseButton img {
+		display: block;
+		border: 0;
+	}
+
+}
