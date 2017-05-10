@@ -39,6 +39,6 @@ The only time I start anything (var, css class, css ID) with a capital is for an
 ## Rough WIP notes
 Pulling in vendor libraries for client side runtime that are packaged through npm. For example we want the use of Underscore _ or window._ we will import the npm package lodash only once in the app and assign it to the window level object
 
-Pulling in vendor libraries that are downloaded as .js or .min.js this one is a pain, working on this as CRA does not allow the bundling of pre minified scripts without passing them through the minifier again and in my experience this has broken code in the past. I'm working on a solution
-
+Pulling in vendor libraries that are downloaded as .js or .min.js and stored in the public folder
+For examples of how to do this I am linking to testvendor.js and normalize.css
 
