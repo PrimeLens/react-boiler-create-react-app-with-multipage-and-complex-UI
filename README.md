@@ -40,5 +40,5 @@ The only time I start anything (var, css class, css ID) with a capital is for an
 Pulling in vendor libraries for client side runtime that are packaged through npm. For example we want the use of Underscore _ or window._ we will import the npm package lodash only once in the app and assign it to the window level object
 
 Pulling in vendor libraries that are downloaded as .js or .min.js and stored in the public folder
-For examples of how to do this I am linking to testvendor.js and normalize.css
+For examples of how to do this I am linking to testvendor.js and bootstrap.min.css
 

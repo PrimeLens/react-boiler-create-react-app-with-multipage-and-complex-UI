@@ -1,0 +1,11 @@
+/*  PLEASE DONT DELETE essential css that enables modals and the spinning loader component */
+#app, #pagecontainer { position: relative; }
+#app { margin: 0 auto; overflow: hidden; }
+/* also */
+body, html, A, IMG { padding: 0; border: 0; margin: 0; }
+/* end */
+
+
+
+
+

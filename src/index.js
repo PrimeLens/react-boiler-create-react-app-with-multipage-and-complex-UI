@@ -11,8 +11,9 @@ import _ from 'lodash';
 window._ = _;
 
 
-import 'global_stylesheet/styles.css';
-
+import 'global_stylesheet/border-sizing-border-box.css';
+import 'global_stylesheet/framework-styles.css';
+import 'global_stylesheet/project-global-styles.css';
 
 // React does not all need to hang from one 'root' node, it works fine with pieces added individually
 // By doing it this way we can give render control of Pagecontainer to a 3rd party router 
