@@ -14,6 +14,9 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>SC Web App</title>
+    <!-- link to vendor css here -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/vendor/normalize.css">    
+
   </head>
   <body>
     <div id="root">
@@ -28,7 +31,8 @@
       Until create-web-app allows for pre minified vendor scripts to be added into the 
       webpack bundle without being minified again we must add them manually here and
       detect for their load
-     -->
+    -->
+    <!-- link to vendor js here -->
     <script src="./vendor/testvendor.js"></script>
     <!-- main static js bundle from webpack will be injected here -->
     <!--
