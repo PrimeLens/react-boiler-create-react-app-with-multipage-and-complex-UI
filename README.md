@@ -42,3 +42,5 @@ Pulling in vendor libraries for client side runtime that are packaged through np
 Pulling in vendor libraries that are downloaded as .js or .min.js and stored in the public folder
 For examples of how to do this I am linking to testvendor.js and bootstrap.min.css
 
+Note the way CRA does things for linked images is that images are stored in /src and they are 'imported' just like the way css assets are
+
