@@ -2,18 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-// ESSENTIAL tools for vanilla javascript control that need to be mounted to the window
-// assignemts to window should only appear ONCE in the app codebase afterwhich
-// each component should already have access 
-import dispatcher from 'dev_libs/bevent.js';
-window.dispatcher = dispatcher;
-import _ from 'lodash';
-window._ = _;
-
 
 import 'global_stylesheet/border-sizing-border-box.css';
 import 'global_stylesheet/framework-styles.css';
 import 'global_stylesheet/project-global-styles.css';
+
+
+
+// ESSENTIAL tools for vanilla javascript control that need to be mounted to the window
+// assignemts to window should only appear ONCE in the app codebase afterwhich
+// each component should already have access 
+import _ from 'lodash';
+window._ = _;
+import dispatcher from 'dev_libs/bevent.js';
+window.dispatcher = dispatcher;
 
 // React does not all need to hang from one 'root' node, it works fine with pieces added individually
 // By doing it this way we can give render control of Pagecontainer to a 3rd party router 
