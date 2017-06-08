@@ -14,9 +14,7 @@ class Nav extends React.Component {
 
 
   componentDidMount(){
-    // this component does not unmount and re-mount like pages and other components do
-    // so there is no need to unbind the listener
-    window.dispatcher.on('pagechange', ()=>{
+    window.dispatcher.off('pagechange').on('pagechange', ()=>{
       this.setState({
         currentPage: window.appStatus.currentPage
       });
@@ -33,6 +31,8 @@ class Nav extends React.Component {
 
 
   render() {
+    // it is the components job to accommodate undefined field in the store 
+    console.log('Nav rendering');    
     return (
     <div id="mainnav">
       <a className={this.getClassNameWithActive('home')} href="#">Home</a>

@@ -7,7 +7,7 @@ import './app.css';
 // ESSENTIAL tools for vanilla javascript control that need to be mounted to the window
 // assignemts to window should only appear ONCE in the app codebase afterwhich
 // each component should already have access 
-import dispatcher from 'dev_libs/bevent.js';
+import dispatcher from 'libraries/bevent.js';
 window.dispatcher = dispatcher;
 import _ from 'lodash';
 window._ = _;
@@ -20,12 +20,12 @@ import maincontrol from 'controllers/maincontrol.js';
 import routerwrapper from 'router/routerwrapper.js';
 
 // child components 
-import Header from 'comp/header/header.jsx';
-import Nav from 'comp/nav/nav.jsx';
-import Pagecontainer from 'comp/pagecontainer/pagecontainer.jsx';
-import Footer from 'comp/footer/footer.jsx';
-import Modalcontainer from 'comp/modalcontainer/modalcontainer.jsx';
-import Loadercontainer from 'comp/loadercontainer/loadercontainer.jsx';
+import Header from 'components/header/header.jsx';
+import Nav from 'components/nav/nav.jsx';
+import Pagecontainer from 'components/pagecontainer/pagecontainer.jsx';
+import Footer from 'components/footer/footer.jsx';
+import Modalcontainer from 'components/modalcontainer/modalcontainer.jsx';
+import Loadercontainer from 'components/loadercontainer/loadercontainer.jsx';
 
 
 class App extends Component {
@@ -37,7 +37,7 @@ class App extends Component {
     // start the router
     routerwrapper.setup();
 
-    window.dispatcher.on('hello', (payload)=>{
+    window.dispatcher.off('hello').on('hello', (payload)=>{
       console.log('App component received message', payload);
     });
 

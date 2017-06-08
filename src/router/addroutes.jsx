@@ -7,13 +7,13 @@
 // Import and compile page level React components here
 // Assign a page pointer to each
 import React from 'react';
-import Homepage from 'comp/pages/home/homepage.jsx';
+import Homepage from 'components/pages/home/homepage.jsx';
 var pointer_Homepage = <Homepage/>;
-import Madmaxpage from 'comp/pages/madmax/madmaxpage.jsx';
+import Madmaxpage from 'components/pages/madmax/madmaxpage.jsx';
 var pointer_Madmaxpage = <Madmaxpage/>;
-import Loginpage from 'comp/pages/login/loginpage.jsx';
+import Loginpage from 'components/pages/login/loginpage.jsx';
 var pointer_Loginpage = <Loginpage/>;
-import Errorpage from 'comp/pages/error/errorpage.jsx';
+import Errorpage from 'components/pages/error/errorpage.jsx';
 var pointer_Errorpage = <Errorpage/>;
 
 

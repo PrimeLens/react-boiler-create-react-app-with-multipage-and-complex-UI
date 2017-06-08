@@ -2,6 +2,8 @@ import React from 'react';
 
 class Homepage extends React.Component {
   render() {
+    // it is the components job to accommodate undefined field in the store 
+    console.log('Homepage rendering');    
     return (
       <div id="homepage">
         <p>

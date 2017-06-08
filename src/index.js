@@ -19,8 +19,17 @@ import 'global_stylesheet/project-global-styles.css';
 //    each component should already have access 
 import _ from 'lodash';
 window._ = _;
-import dispatcher from 'dev_libs/bevent.js';
+import dispatcher from 'libraries/bevent.js';
 window.dispatcher = dispatcher;
+
+
+
+// CREATE WINDOW LEVEL DATA OBJECTS
+// make sure these are in place before rendering React components
+import windowDataObjects from 'controllers/windowdataobjects.js';
+windowDataObjects.setup();
+
+
 
 
 
@@ -29,11 +38,11 @@ window.dispatcher = dispatcher;
 //    React does not all need to hang from one 'root' node, it works fine with pieces added individually
 //    By doing it this way we can give render control of Pagecontainer to a 3rd party router 
 //    using the ReactDOM API
-import Header from 'comp/header/header.jsx';
-import Nav from 'comp/nav/nav.jsx';
-import Footer from 'comp/footer/footer.jsx';
-import Modalcontainer from 'comp/modalcontainer/modalcontainer.jsx';
-import Loadercontainer from 'comp/loadercontainer/loadercontainer.jsx';
+import Header from 'components/header/header.jsx';
+import Nav from 'components/nav/nav.jsx';
+import Footer from 'components/footer/footer.jsx';
+import Modalcontainer from 'components/modalcontainer/modalcontainer.jsx';
+import Loadercontainer from 'components/loadercontainer/loadercontainer.jsx';
 ReactDOM.render(<Header/>, document.getElementById('headerContainer'));
 ReactDOM.render(<Nav/>, document.getElementById('navContainer'));
 ReactDOM.render(<Footer/>, document.getElementById('footerContainer'));
@@ -42,16 +51,9 @@ ReactDOM.render(<Loadercontainer/>, document.getElementById('loaderContainer'));
 
 
 // test the dispatcher
-window.dispatcher.on('hello', (payload)=>{
+window.dispatcher.off('hello').on('hello', (payload)=>{
   console.log('App component received message', payload);
 });
-
-
-// CREATE WINDOW LEVEL DATA OBJECTS
-import windowDataObjects from 'controllers/windowdataobjects.js';
-windowDataObjects.setup();
-
-
 
 
 
@@ -64,3 +66,9 @@ routerwrapper.setup();
 // to control the flow of this app and state management
 import maincontroller from 'controllers/maincontroller.js';
 maincontroller.setup();
+
+
+
+
+
+

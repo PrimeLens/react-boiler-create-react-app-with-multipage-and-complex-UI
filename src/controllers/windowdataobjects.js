@@ -16,16 +16,17 @@ var setup =()=>{
   if (true) {
     window.appStatus.env = 'staging';
   } else {
-    window.appStatus.env = 'prod';
+    window.appStatus.env = 'production';
   }
 
 
 
 
+  // to store userContext, originalData from the server and transformedData
+  // as well as methods for get, post and transform  
+  window.originalData = originalData;
+  if (originalData.setup) originalData.setup();
 
-  // to keep 'model like' data that React components will bind to
-  // will be a 1:1 representation of what is in the UI
-  window.stores = {};
 
 
 
@@ -35,10 +36,12 @@ var setup =()=>{
 
 
 
-  // to store userContext, originalData from the server and transformedData
-  // as well as methods for get, post and transform  
-  window.originalData = originalData;
-  if (originalData.setup) originalData.setup();
+
+  // to keep 'model like' data that React components will bind to
+  // will be a 1:1 representation of what is in the UI
+  window.stores = {};
+
+
 
 
 

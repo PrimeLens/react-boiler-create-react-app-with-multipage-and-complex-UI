@@ -2,12 +2,12 @@
 
   // usage
   /*
-    Bevent.on('myevent', function(){
+    Bevent.off('myevent').on('myevent', function(){
       // code
     });
     Bevent.trigger('myevent');    
     // or with payload
-    Bevent.on('myevent', function(data){
+    Bevent.off('myevent').on('myevent', function(data){
       // code
     });
     Bevent.trigger('myevent', data);    

@@ -32,7 +32,7 @@ var setup = ()=>{
       if (window.originalData['filmList']) {
         // ingest_filmList();
         // data is now in store, lets tell the presentation layer to re-render
-        window.dispatcher.trigger('updateFilmList');
+        window.dispatcher.trigger('ui-updateFilmList');
       } 
     });
   // end promise chain
