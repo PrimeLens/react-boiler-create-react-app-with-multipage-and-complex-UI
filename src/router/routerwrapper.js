@@ -37,9 +37,18 @@ routerConfig.routeTunnel = (pageArg, pageHandle)=>{
   console.log('currentPage is ', appStatus.currentPage);  
   // ok this router's argument passing kinda sucks (no query string) etc
   // so lets just pull everything from window.location.href
+
+
+  // get the right hand side of the #
   var temp = window.location.href.split('#')[1];
-  if (temp.length>0) temp = temp.substr(1);
+  // if right side exists, if the first char is a /, remove the /
+  if (temp.length>0) if (temp[0]==='/') temp = temp.substr(1);
+  // store a copy of this entire route in appStatus
   appStatus.currentRoute = temp;
+
+
+
+
   if (temp.indexOf(pageArg)>=0) {
     // the currentRoute includes the currentPage so remove it
     temp = temp.substr(pageArg.length+1);
