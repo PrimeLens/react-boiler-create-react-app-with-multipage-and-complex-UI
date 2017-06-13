@@ -25,7 +25,7 @@ import Nav from 'components/nav/nav.jsx';
 import Pagecontainer from 'components/pagecontainer/pagecontainer.jsx';
 import Footer from 'components/footer/footer.jsx';
 import Modalcontainer from 'components/modalcontainer/modalcontainer.jsx';
-import Loadercontainer from 'components/loadercontainer/loadercontainer.jsx';
+import Loadercontainer from 'components/spinner/spinner.jsx';
 
 
 class App extends Component {

@@ -1,0 +1,25 @@
+
+#spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255, 0.8);
+  top: 0;
+  left: 0;
+}
+
+#spinner .spinningMessage { top: 50%; position: relative; }
+
+#spinner .animatedGif { 
+  width: 100%;
+  max-width: 600px;
+  margin: -300px auto 0;
+}
+
+/*   for reference
+  <div id="spinner">
+    <div className="spinningMessage">
+      <span className="animatedGif">img Spinning ...</span>
+    </div>
+  </div> 
+*/

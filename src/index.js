@@ -42,12 +42,12 @@ import Header from 'components/header/header.jsx';
 import Nav from 'components/nav/nav.jsx';
 import Footer from 'components/footer/footer.jsx';
 import Modalcontainer from 'components/modalcontainer/modalcontainer.jsx';
-import Loadercontainer from 'components/loadercontainer/loadercontainer.jsx';
+import Loadercontainer from 'components/spinner/spinner.jsx';
 ReactDOM.render(<Header/>, document.getElementById('headerContainer'));
 ReactDOM.render(<Nav/>, document.getElementById('navContainer'));
 ReactDOM.render(<Footer/>, document.getElementById('footerContainer'));
 ReactDOM.render(<Modalcontainer/>, document.getElementById('modalContainer'));
-ReactDOM.render(<Loadercontainer/>, document.getElementById('loaderContainer'));
+ReactDOM.render(<Loadercontainer/>, document.getElementById('spinnerContainer'));
 
 
 // test the dispatcher
